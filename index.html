@@ -1,40 +1,102 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" 
-    version="XHTML+RDFa 1.0"
-    xmlns:og="http://ogp.me/ns#"
-    xml:lang="en">
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQGJXS1Q8D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+﻿<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-  gtag('config', 'G-LQGJXS1Q8D');
-</script>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="monitor-signature" content="monitor:player:html5" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+.bgimg {
+  background-image: url('files/mobile/1.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
  
-<meta name="Keywords" content="#tag, hcetmagzine" />
-<meta name="Description" content="#tag" />
-<meta name="Generator" content="DEJAVU_2020" />
-<link rel="image_src" href="/shot.jpg" />
- <link rel="shortcut icon" href="files/thumb/1.jpg" />
-<link rel="apple-touch-icon" href="files/thumb/1.jpg" />
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
 
-<meta property="og:image" content="shot.jpg" />
-<meta property="og:title" content="#tag"/> 
-<meta property="og:description" content="" I disapprove of what you say, but I will defend to the death your right to say it"
-                                       - Evelyn Beatrice Hall
-....... describes the title #. We may disagree with what people say, but will gather ourselves for the rights of a fellow human being. Hashtags brings out people of different caste n creed and ethnicity together to stand for a particular cause; for the sake of humankind. # , our college magazine of the year 2020 brings out the creativity and vigor of our students who tirelessly worked to make it happen in this global pandemic era. It was supposed to be out by may, june---- but the changed scenarios forced us to extend the date and to come up with different strategies. The sincere efforts put in by the faculties guided the magazine team throughout this laborious process.
-Their words will thaw the ice that engulfs the generation as prejudices and suppressions and will wipe clean the colors that stained our eyes. To put it in words, transparency serves as the color of our magazine."" />
-<title>#tag</title>
-</head>	
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  color: rgba(145, 121, 99, 0.933);
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: rgba(255, 255, 255, 0.699);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+
+}
+
+.middle {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  color: rgba(250, 250, 250, 0.973);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+/* Styling the button */ 
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
 <body>
-CU SooN
+
+<div class="bgimg">
+  <div class="topleft">
+   
+    <p><strong>#tag-College Magazine of HCET</strong></p>
+  </div>
+  <div class="middle">
+    <h1>Stay Tuned</h1>
+    <h3> Coming SooN</h3>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+    
+    
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 03, 2021 11:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 </body>
+</html>
